@@ -11,6 +11,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= link_to 'Home', root_path%>
+      <%= link_to 'About', about_path%>
+      <%= link_to 'New Coures', courses_new_path%>
+      <%= yield %>
+    </div>
   </body>
 </html>
