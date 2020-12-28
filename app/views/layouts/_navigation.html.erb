@@ -31,4 +31,17 @@
       </div>
     </div>
   </nav>
+
+  <% flash.each do |key,message|%>
+    <div class="container">
+        <div class="row signup-form">
+            <div class="col s12 m12 l12">
+                <div class="card-panel red lighten-2" id="close-target">
+                    <h6 class="white-text"><%= message %></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+  <% end %>    
+
 </header>

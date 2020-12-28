@@ -22,6 +22,7 @@ ActiveStorage.start()
 jQuery(document).on('turbolinks:load', function(){
     jQuery(".dropdown-trigger").dropdown();
     jQuery('.sidenav').sidenav();
+    // jQuery('#close-target').fadeOut(4000);
 })
 
 // document.addEventListener('DOMContentLoaded', function() {
