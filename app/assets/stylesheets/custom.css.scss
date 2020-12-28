@@ -4,10 +4,7 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-}
-
-nav{
-  margin-bottom: 2rem;
+  background-color: #e0e0e0 !important;
 }
 
 main {
@@ -15,4 +12,8 @@ main {
 }
 .signup-form{
   padding-top: 2rem;
+}
+.prof-col{
+  margin-top: 2rem;
+  padding: 0 !important;
 }

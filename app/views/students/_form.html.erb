@@ -38,6 +38,9 @@
                             </div>
                         </div>
                     <% end %>
+                    <% if @student.new_record? %>
+                        <%=session_link %>
+                    <% end %>
                 </div>
             </div>
         </div>

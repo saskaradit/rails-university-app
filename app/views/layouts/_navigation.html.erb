@@ -12,7 +12,7 @@
     <% end %>
   </ul>
   <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper blue-grey darken-2">
       <div class="container">
         <%= link_to "Rad University", root_path, class:"brand-logo"%>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -22,7 +22,7 @@
             <li><%= link_to "Students", students_path%></li>
           <% end %>
           <li><%= link_to 'About', about_path%></li>
-          <li><%= link_to 'New Coures', courses_new_path%></li>
+          <li><%= link_to 'New Courses', courses_new_path%></li>
           <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
         <ul class="sidenav" id="mobile-demo">
@@ -41,12 +41,11 @@
     <div class="container">
         <div class="row signup-form">
             <div class="col s12 m12 l12">
-                <div class="card-panel red lighten-2" id="close-target">
+                <div class="card-panel grey darken-2" id="close-target">
                     <h6 class="white-text"><%= message %></h6>
                 </div>
             </div>
         </div>
     </div>
   <% end %>    
-
 </header>

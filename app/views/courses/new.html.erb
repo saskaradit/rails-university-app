@@ -1,1 +1,39 @@
-<h2>add new course?</h2>
+
+<%= render 'shared/messages', obj: @course %> 
+
+<div class="container">
+    <div class="row center signup-form">
+        <div class="col s12 m12 l12">
+            <div class="card-panel">
+                <h3 class="header">Add New Course</h3>
+                <div class="row">
+                    <%= form_for(@course, html: {class:"col s12"}) do |f|%>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <%= f.text_field  :name, autofocus:true%><br>
+                                <%= f.label :name, class:"active"%>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <%= f.text_field  :short_name, autofocus:true%>
+                                <%= f.label :short_name,class:"active"%>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <%= f.text_area :description, autofocus:true, class:"materialize-textarea"%>
+                                <%= f.label :description, class:"active"%>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <%= f.button "Create", class:"btn orange waves-light waves-effect"%>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
