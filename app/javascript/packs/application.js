@@ -10,7 +10,8 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-import 'materialize-css/dist/js/materialize'
+// import 'materialize-css/dist/js/materialize'
+import M from 'materialize-css'
 // import '../stylesheets/application'
 
 
@@ -22,7 +23,7 @@ ActiveStorage.start()
 jQuery(document).on('turbolinks:load', function(){
     jQuery(".dropdown-trigger").dropdown();
     jQuery('.sidenav').sidenav();
-    // jQuery('#close-target').fadeOut(4000);
+    jQuery('#close-target').fadeOut(4000);
 })
 
 // document.addEventListener('DOMContentLoaded', function() {
