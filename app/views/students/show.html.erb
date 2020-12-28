@@ -9,6 +9,8 @@
                 <h3>Enrollment</h3>
             </div> %>
         </div>
-        <%= link_to "Edit Profile", edit_student_path(@student), class:"btn waves-effect waves-light"%>
+        <% if current_user == @student  %>
+            <%= link_to "Edit Profile", edit_student_path(@student), class:"btn waves-effect waves-light"%>
+        <% end %>
     </div>
 </div>
